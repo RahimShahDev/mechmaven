@@ -111,7 +111,7 @@ function NavBar() {
           ))}
           <button 
             onClick={() => {
-              router.push('/get-started');
+              router.push('/contact');
               setIsMobileMenuOpen(false);
             }}
             className="w-full mt-2 px-4 py-3 bg-[#B50303] text-white font-semibold rounded-md 
