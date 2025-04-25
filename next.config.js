@@ -24,6 +24,7 @@ const nextConfig = {
       },
     ],
   },
+  
   eslint: {
     ignoreDuringBuilds: true, // ✅ This line fixes the Vercel ESLint build issue
   },
