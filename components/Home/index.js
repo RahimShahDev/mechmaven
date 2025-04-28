@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 
 import { Navigation } from 'swiper/modules';
@@ -19,31 +20,31 @@ const slides = [
   {
     title: "Professional Mechanical Engineering Services",
     desc: "Accurate, Fast & Quality Driven Technical Services by Technical Experts.",
-    link: "https://mechmaven.com/",
+    link: "/services",
     image: "/assets/images/COMPUTER-AIDED-ENGINEERING.webp"
   },
   {
     title: "CFD Consulting Services",
     desc: "Unlock the potential of fluid dynamics with our advanced CFD services – where precision meets performance.",
-    link: "https://mechmaven.com/cfd-consulting-services/",
+    link: "/services",
     image: "/assets/images/Cfd-mechmaven.webp"
   },
   {
     title: "Green Building Services",
     desc: "Building a Sustainable Future with Our Green, Eco-Friendly, Efficient, Innovative, Building Services.",
-    link: "https://mechmaven.com/green-building-services/",
+    link: "/services",
     image: "/assets/images/Green-building-services-jpg-1.webp",
   },
   {
     title: "Mechanical & HVAC Design",
     desc: "Your Comfort, Our Commitment - Smart HVAC Designs",
-    link: "https://mechmaven.com/mechanical-hvac-design/",
+    link: "/services",
     image: "/assets/images/3d-rendering-ventilation-system-1-scaled-1.webp",
   },
   {
     title: "SOLIDWORKS Engineering Services",
     desc: "SOLIDWORKS Engineering Services: Crafting the Future of Design Excellence.",
-    link: "https://mechmaven.com/solidworks-engineering-services/",
+    link: "/services",
     image: "/assets/images/Solidworks-3d-Modeling-jpg-2.webp",
   },
 ];
@@ -184,9 +185,11 @@ const renderStars = (rating) => {
           <p className="text-gray-700">
             We breathe life into your engineering visions. With a steadfast commitment to innovation and excellence, we are your premier destination for cutting-edge CAD design, comprehensive CFD analysis, efficient HVAC solutions, sustainable green building strategies, and captivating product animations.
           </p>
+          <Link href="/about" passHref>
           <button className="bg-[#B50303] text-white px-6 py-3 rounded-lg text-base hover:bg-[#a00202] transition duration-300">
             Explore More
           </button>
+          </Link>
         </div>
       </section>
 
@@ -286,12 +289,14 @@ const renderStars = (rating) => {
           Trusted by industries worldwide for precision engineering solutions.
         </p>
         
+        <Link href="/contact" passHref>
         <button 
           className="bg-[#B50303] text-white px-6 py-2 rounded-full font-medium hover:bg-black transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-[#B50303] focus:ring-offset-2"
           onClick={() => console.log('Contact clicked')}
         >
           Contact Us
         </button>
+        </Link>
       </div>
     </div>
   </div>
@@ -330,6 +335,7 @@ const renderStars = (rating) => {
         </p>
       </div>
 
+      <Link href="/services" passHref>
       <button 
         className="mt-6 bg-[#B50303] text-white px-8 py-3 sm:px-10 sm:py-3 rounded-lg text-base font-medium hover:bg-[#8a0202] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B50303] focus:ring-offset-2"
         onClick={() => console.log('Explore More clicked')}
@@ -337,6 +343,7 @@ const renderStars = (rating) => {
         Explore Our Services
         <i className="fas fa-arrow-right ml-2" aria-hidden="true"></i>
       </button>
+      </Link>
     </div>
   </div>
 </section>
@@ -357,6 +364,7 @@ const renderStars = (rating) => {
   {/* Services Cards */}
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6">
     {/* CFD Consulting Services */}
+    <Link href="/services" passHref>
     <div className="group relative transform hover:-translate-y-2 transition-all duration-300">
       <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
       <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -379,8 +387,10 @@ const renderStars = (rating) => {
         </div>
       </div>
     </div>
+    </Link>
 
     {/* Green Building Services */}
+    <Link href="/services" passHref>
     <div className="group relative transform hover:-translate-y-2 transition-all duration-300">
       <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
       <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -403,8 +413,10 @@ const renderStars = (rating) => {
         </div>
       </div>
     </div>
+    </Link>
 
     {/* Mechanical & HVAC Design */}
+    <Link href="/services" passHref>
     <div className="group relative transform hover:-translate-y-2 transition-all duration-300">
       <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
       <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -427,6 +439,7 @@ const renderStars = (rating) => {
         </div>
       </div>
     </div>
+    </Link>
   </div>
 
   {/* SolidWorks Section Heading */}
@@ -456,6 +469,7 @@ const renderStars = (rating) => {
         href: "#"
       }
     ].map((service, index) => (
+      <Link href="/services" passHref>
       <div key={index} className="group relative transform hover:-translate-y-2 transition-all duration-300">
         <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
         <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -478,6 +492,7 @@ const renderStars = (rating) => {
           </div>
         </div>
       </div>
+      </Link>
     ))}
   </div>
 </section>
