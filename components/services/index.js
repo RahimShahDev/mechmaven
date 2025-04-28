@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Layers3, Thermometer, Leaf, Box, PlayCircle, Hammer } from 'lucide-react';
+import Link from 'next/link';
 
 const services = [
     {
@@ -99,9 +100,14 @@ function Services (){
               transition={{ delay: 0.7 }}
               className="mt-6"
             >
-              <button className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent">
-                Explore Services
-              </button>
+              
+              <a 
+  href="#services-section"
+  className="inline-block px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-transparent cursor-pointer"
+>
+  Explore Services
+</a>
+
             </motion.div>
           </motion.div>
         </motion.div>
@@ -230,7 +236,7 @@ function Services (){
     </section>
 
     {/* Service Cards Section  */}
-   <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+   <section id='services-section' className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
