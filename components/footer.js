@@ -72,28 +72,23 @@ function Footer() {
           <h2 className="text-xl font-semibold mb-4 border-b border-gray-600 pb-2">Services</h2>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/privacy-policy" className="hover:text-blue-400 transition">
-                Privacy Policy
+              <Link href="/services" className="hover:text-blue-400 transition">
+              CFD Consulting Services
               </Link>
             </li>
             <li>
-              <Link href="/terms-and-conditions" className="hover:text-blue-400 transition">
-                Terms and Conditions
+              <Link href="/services" className="hover:text-blue-400 transition">
+              Mechanical & HVAC Design
               </Link>
             </li>
             <li>
-              <Link href="/accessibilityStatement" className="hover:text-blue-400 transition">
-                Accessibility Statement
+              <Link href="/services" className="hover:text-blue-400 transition">
+              Green Building Services
               </Link>
             </li>
             <li>
-              <Link href="/cookiePolicy" className="hover:text-blue-400 transition">
-                Cookie Policy
-              </Link>
-            </li>
-            <li>
-              <Link href="/disclaimer" className="hover:text-blue-400 transition">
-                Disclaimer
+              <Link href="/services" className="hover:text-blue-400 transition">
+              SolidWorks Design Services
               </Link>
             </li>
           </ul>
@@ -109,12 +104,12 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="hover:text-blue-400 transition">
+              <Link href="/portfolio" className="hover:text-blue-400 transition">
                 Our Projects
               </Link>
             </li>
             <li>
-              <Link href="/why-us" className="hover:text-blue-400 transition">
+              <Link href="/about" className="hover:text-blue-400 transition">
                 Why Choose Us
               </Link>
             </li>
@@ -167,12 +162,12 @@ function Footer() {
     {/* Right Side - Links */}
     <ul className="flex space-x-4 text-sm">
       <li>
-        <a href="/privacy-policy" className="hover:underline hover:text-gray-200 transition">
+        <a href="#" className="hover:underline hover:text-gray-200 transition">
           Privacy Policy
         </a>
       </li>
       <li>
-        <a href="/terms-and-conditions" className="hover:underline hover:text-gray-200 transition">
+        <a href="#" className="hover:underline hover:text-gray-200 transition">
           Terms & Conditions
         </a>
       </li>
