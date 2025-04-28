@@ -14,7 +14,7 @@ function Footer() {
       <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-10 p-8">
         {/* Logo & Description */}
         <div className="md:flex md:flex-col md:items-center md:justify-center w-full md:w-1/2 md:mx-auto text-center ">
-  <a href="https://mechmaven.com/" className="inline-block mb-4">
+  <a href="#" className="inline-block mb-4">
     <img
       src="https://mechmaven.com/wp-content/uploads/2023/10/admin-ajax.webp"
       alt="Mechmaven Logo"
