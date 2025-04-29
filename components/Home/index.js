@@ -276,7 +276,7 @@ const renderStars = (rating) => {
         >
           <span className="text-3xl sm:text-4xl text-[#c40303] font-bold">+</span>
           <AnimatedCounter 
-            to={5000} 
+            to={400} 
             className="text-4xl sm:text-5xl text-[#c40303] font-bold tracking-tight group-hover:text-black transition-colors duration-300"
           />
         </div>
@@ -350,7 +350,7 @@ const renderStars = (rating) => {
 
 {/* Our Mechanical Engineering Services */}
 <section className="bg-gray-900 py-16 md:py-24 px-4 sm:px-6">
-  {/* Hero Heading */}
+  {/* Mechanical Engineering Heading */}
   <div className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
     <span className="inline-block text-red-600 text-sm md:text-base border border-gray-700 rounded-full py-2 px-6 mb-4 hover:bg-gray-800 transition-all duration-300 hover:scale-105 cursor-default">
       Journey Towards Success
@@ -361,10 +361,9 @@ const renderStars = (rating) => {
     <div className="w-20 h-1 bg-red-600 mx-auto mt-6 mb-8"></div>
   </div>
   
-  {/* Services Cards */}
+  {/* Mechanical Services Cards */}
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6">
     {/* CFD Consulting Services */}
-    <Link href="/services" passHref>
     <div className="group relative transform hover:-translate-y-2 transition-all duration-300">
       <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
       <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -387,10 +386,8 @@ const renderStars = (rating) => {
         </div>
       </div>
     </div>
-    </Link>
 
     {/* Green Building Services */}
-    <Link href="/services" passHref>
     <div className="group relative transform hover:-translate-y-2 transition-all duration-300">
       <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
       <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -413,10 +410,8 @@ const renderStars = (rating) => {
         </div>
       </div>
     </div>
-    </Link>
 
     {/* Mechanical & HVAC Design */}
-    <Link href="/services" passHref>
     <div className="group relative transform hover:-translate-y-2 transition-all duration-300">
       <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
       <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -439,7 +434,6 @@ const renderStars = (rating) => {
         </div>
       </div>
     </div>
-    </Link>
   </div>
 
   {/* SolidWorks Section Heading */}
@@ -469,7 +463,6 @@ const renderStars = (rating) => {
         href: "#"
       }
     ].map((service, index) => (
-      <Link href="/services" passHref>
       <div key={index} className="group relative transform hover:-translate-y-2 transition-all duration-300">
         <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
         <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
@@ -492,7 +485,58 @@ const renderStars = (rating) => {
           </div>
         </div>
       </div>
-      </Link>
+    ))}
+  </div>
+
+  {/* IT Services Heading */}
+  <div className="max-w-4xl mx-auto text-center mt-24 mb-12">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl text-white font-bold leading-tight">
+      Our <span className="text-red-600">IT Services</span>
+    </h2>
+    <div className="w-20 h-1 bg-red-600 mx-auto mt-6 mb-8"></div>
+  </div>
+
+  {/* IT Services Cards */}
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6">
+    {[
+      {
+        title: "Web Development",
+        desc: "Custom, responsive websites and web apps built with React, Next.js, and modern frameworks. Scalable solutions tailored to your needs.",
+        href: "#"
+      },
+      {
+        title: "Cybersecurity",
+        desc: "End-to-end protection against threats: penetration testing, vulnerability assessments, and compliance (GDPR, HIPAA).",
+        href: "#"
+      },
+      {
+        title: "Cloud Solutions",
+        desc: "Migrate, optimize, and manage cloud infrastructure (AWS, Azure, GCP). Scalable, secure, and high-availability architectures.",
+        href: "#"
+      }
+    ].map((service, index) => (
+      <div key={index} className="group relative transform hover:-translate-y-2 transition-all duration-300">
+        <div className="absolute -inset-0.5 bg-red-600 rounded-lg blur opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
+        <div className="relative h-full bg-gray-800 rounded-lg p-6 border border-gray-700 group-hover:border-red-600 transition-all duration-300 overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          <div className="h-full flex flex-col">
+            <h3 className="text-white text-xl md:text-2xl font-semibold mb-4 group-hover:text-red-400 transition-colors duration-300">
+              <span className="text-red-600 mr-2">▹</span>{service.title}
+            </h3>
+            <p className="text-gray-300 text-base md:text-lg mb-6 flex-grow">
+              {service.desc}
+            </p>
+            <div className="mt-auto pt-4 border-t border-gray-700 group-hover:border-red-600 transition-colors duration-300">
+              <a href={service.href} className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
+                Explore Service
+                <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     ))}
   </div>
 </section>
