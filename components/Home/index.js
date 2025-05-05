@@ -11,6 +11,7 @@ import { AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 
+
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -376,12 +377,12 @@ const renderStars = (rating) => {
             Advanced fluid dynamics simulations for aerospace, medical, and automotive sectors. Optimize performance while reducing development costs.
           </p>
           <div className="mt-auto pt-4 border-t border-gray-700 group-hover:border-red-600 transition-colors duration-300">
-            <a href="https://mechmaven.com/cfd-consulting-services/" className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
+            <Link href="/services" className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
               Explore Service
               <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -400,12 +401,12 @@ const renderStars = (rating) => {
             Sustainable design solutions enhancing energy efficiency while maintaining architectural integrity. LEED-certified approaches.
           </p>
           <div className="mt-auto pt-4 border-t border-gray-700 group-hover:border-red-600 transition-colors duration-300">
-            <a href="https://mechmaven.com/green-building-services/" className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
+            <Link href="/services" className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
               Explore Service
               <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -424,12 +425,12 @@ const renderStars = (rating) => {
             Custom climate control solutions balancing performance with energy conservation for commercial and residential spaces.
           </p>
           <div className="mt-auto pt-4 border-t border-gray-700 group-hover:border-red-600 transition-colors duration-300">
-            <a href="https://mechmaven.com/mechanical-hvac-design/" className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
+            <Link href="/services" className="inline-flex items-center text-red-400 font-medium group-hover:text-white transition-colors duration-300">
               Explore Service
               <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
